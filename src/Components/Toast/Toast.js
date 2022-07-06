@@ -11,7 +11,8 @@ const Toast = styled.div`
   border-radius: 6px;
   position: absolute;
   top: 57px;
-  right: 26px;
+  right: 176px;
+  z-index: 1;
 
   &::after {
     content: "";
@@ -25,13 +26,8 @@ const Toast = styled.div`
     z-index: -10;
   }
 
-  @media (max-width: 740px) {
-    right: 17px;
-  }
-
-  @media (max-width: 600px) {
-    top: 95px;
-    //   right: calc()
+  @media(max-width: 618px) {
+    top: 94px;
   }
 
   @keyframes toast-on {

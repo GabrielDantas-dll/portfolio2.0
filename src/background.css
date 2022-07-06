@@ -1,8 +1,0 @@
-:root {
-  --primary: linear-gradient(90deg, rgb(50, 15, 93) 0%, rgb(183, 0, 255) 100%);
-  --secondary: linear-gradient(90deg, rgba(19, 15, 15, 1) 0%, rgba(212, 0, 0, 1) 100%);
-}
-
-html {
-  background: var(--primary);
-}

@@ -6,7 +6,7 @@ import Toaster from "../Toast/Toast";
 const MainHeader = styled.header`
   display: flex;
   width: 95%;
-  margin: 30px auto 0px auto;
+  margin: 0px auto 0px auto;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -14,26 +14,45 @@ const MainHeader = styled.header`
   font-size: 24px;
   position: relative;
 
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    display: flex;
+    algin-items: center;
+    justify-content: center;
+    padding: 0 25px;
+  }
+
   nav ul li a {
-    padding-left: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient( to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0) ), linear-gradient( to right, #FD93C9, #9431e6 );
+    background-position-x: 0%, 0%;
+    background-position-y: 0%, 0%;
+    background-repeat: repeat, repeat;
+    background-size: auto, auto;
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
     text-decoration: none;
-    color: white;
-    font-family: 'Red Hat Mono', monospace;
+    color: #fff;
+    // padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
+  }
 
-    &:hover {
-      transition: ease-in-out 0.2s;
-      cursor: pointer;
-      color: rgb(67, 235, 52);
-    }
-  } 
+  nav ul li a:hover {
+    background-size: 0 0px, 100% 3px;
+  }
 
-  @media(max-width: 600px) {
+  @media(max-width: 618px) {
     flex-direction: column;
     width: 95%;
-    margin-top: 30px;
+    margin-top: 0px;
 
-    nav {
+    nav{
       margin-top: 15px;
     }
   }
@@ -41,7 +60,6 @@ const MainHeader = styled.header`
 `;
 
 function Header() {
-
   const [toastVisible, setToastVisible] = useState(false);
 
   const toggleToastVisible = () => {
@@ -49,7 +67,7 @@ function Header() {
     setTimeout(() => {
       setToastVisible(false);
     }, 3000);
-  }
+  };
 
   return (
     <MainHeader>
@@ -58,23 +76,33 @@ function Header() {
         <ul>
           <li>
             <a
-              target="_blank"
               href="https://www.linkedin.com/in/gabriel-dantas-874349160/"
+              target="blank"
             >
-              <span>/</span>LinkedIn
+              LinkedIn
             </a>
-            <a target="_blank" href="https://github.com/GabrielDantas-dll">
-              <span>/</span>GitHub
+          </li>
+          <li>
+            <a href="https://github.com/GabrielDantas-dll" target="blank">
+              GitHub
             </a>
-            <CopyToClipboard text="gabrieldol@yahoo.com.br">
-              <a onClick={toggleToastVisible}>
-                <span>/</span>E-mail
-              </a>
+          </li>
+          <li>
+            <CopyToClipboard text="gabrieldol82@gmail.com.br">
+              <a onClick={toggleToastVisible}>E-mail</a>
             </CopyToClipboard>
           </li>
+          {/* <li>
+            <a
+              href="https://www.linkedin.com/in/gabriel-dantas-874349160/"
+              target="blank"
+            >
+              Meu C.V
+            </a>
+          </li> */}
         </ul>
       </nav>
-      {toastVisible ? (<Toaster />) :null }
+      {toastVisible ? <Toaster /> : null}
     </MainHeader>
   );
 }

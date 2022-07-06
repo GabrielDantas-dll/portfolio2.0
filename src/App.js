@@ -1,5 +1,4 @@
 import "./App.css";
-import "./background.css";
 import Header from "./Components/Header/Header";
 import Section1 from "./Components/Section1/Section1";
 import Section2 from "./Components/Section2/Section2";
