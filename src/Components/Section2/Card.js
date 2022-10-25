@@ -55,7 +55,8 @@ function Card() {
       title: "Projeto Eduick",
       description:
         "Desenvolvido em React. Projeto feito para uma entrevista de emprego. Este foi meu primeiro projeto grande feito em um framework. Apesar da dificuldade de um projeto grande como este, gostei do resultado ",
-      image: "",
+      image: "https://edusynch.com/images/layout/logo-edusynch.svg",
+      link: "https://gabrieldantas-dll.github.io/projeto-eduick/",
     },
     {
       title: "Twenty One Pilots",
@@ -66,23 +67,38 @@ function Card() {
       link: "https://github.com/GabrielDantas-dll/Twenty-One-Pilots",
     },
     {
+      title: "Projeto organo - alura",
+      description: "Projeto desenvolvido em react junto a Alura. Muitos conteúdos eu já tinha o conhecimento, mas sempre bom rever alguns conteúdos",
+      link: "https://github.com/GabrielDantas-dll/react-alura",
+      image: "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      title: "Qual a cor?",
+      description: "Jogo para acertar o hexadecimal de cores. Novas funcionalidades em breve",
+      link: "https://github.com/GabrielDantas-dll/Qual-a-cor",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUxU01_bRCaEsAVw76gjcc1tJT7GOddH2grw&usqp=CAU",
+    },
+    {
       title: "Jogo Pong",
       description:
         "Jogo feito com Python e TKinter. Não é minha especialidade, mas foi divertido programa-lo",
       image:
         "https://s2.glbimg.com/kvTwEVHf2rM0uC30xl2bHY-2zBA=/695x0/s.glbimg.com/po/tt2/f/original/2016/03/02/pong.jpg",
+      link: "https://github.com/GabrielDantas-dll/Pong",
     },
     {
       title: "Contador",
       description:
         "Feito com JavaScript. Nele existem basicamente 3 funções: Somar, subtrair e zerar o contador",
       image: "https://gabrieldantas-dll.github.io/img/Contador.jpeg",
+      link: "https://github.com/GabrielDantas-dll/Contador"
     },
     {
       title: "Página de login",
       description:
         "Feito com html, css e uma pitada de JS. Gostei bastante do resultado final, pretendo usar em um projeto futuro",
       image: "https://gabrieldantas-dll.github.io/img/login2.jpeg",
+      link: "https://github.com/GabrielDantas-dll/Pagina-de-login",
     },
   ]);
 

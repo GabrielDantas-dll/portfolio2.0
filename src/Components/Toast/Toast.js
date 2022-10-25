@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const Toast = styled.div`
@@ -10,8 +10,8 @@ const Toast = styled.div`
   text-align: center;
   border-radius: 6px;
   position: absolute;
-  top: 57px;
-  right: 176px;
+  top: 65px;
+  right: 35px;
   z-index: 1;
 
   &::after {
@@ -26,8 +26,8 @@ const Toast = styled.div`
     z-index: -10;
   }
 
-  @media(max-width: 618px) {
-    top: 94px;
+  @media (max-width: 618px) {
+    display: none;
   }
 
   @keyframes toast-on {

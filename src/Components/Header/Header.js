@@ -92,14 +92,6 @@ function Header() {
               <a onClick={toggleToastVisible}>E-mail</a>
             </CopyToClipboard>
           </li>
-          {/* <li>
-            <a
-              href="https://www.linkedin.com/in/gabriel-dantas-874349160/"
-              target="blank"
-            >
-              Meu C.V
-            </a>
-          </li> */}
         </ul>
       </nav>
       {toastVisible ? <Toaster /> : null}
